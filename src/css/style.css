@@ -263,6 +263,25 @@ h2 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+@media Screen and (min-width: 420px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media Screen and (min-width: 710px) {
+    h2 {
+        font-size: 2.1rem;
+    }
+}
+
+@media Screen and (min-width: 1200px) {
+    h2 {
+        font-size: 2.1rem;
+    }
 }
 
 h3 {
@@ -466,19 +485,25 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 ul.order li {
     border-bottom: 1px solid #000;
     padding: 2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+@media Screen and (min-width: 1200px) {
+    ul.order li {
+        justify-content: space-between;
+    }
 }
 ul.order li:hover button {
     display: inline;
@@ -715,6 +740,7 @@ button.success:after,
 input[type='submit'].success:after {
     background: #2dc22d;
 }
+
 button.github,
 input[type='submit'].github,
 button.facebook,
@@ -724,9 +750,54 @@ input[type='submit'].twitter {
     border: 0;
     display: block;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 41%;
+    margin-bottom: 5px;
+    margin: 0 auto;
     color: #fff;
-    padding: 2rem;
+
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 1.4rem 1rem;
+}
+
+@media Screen and (min-width: 420px) {
+    button.github,
+    input[type='submit'].github,
+    button.facebook,
+    input[type='submit'].facebook,
+    button.twitter,
+    input[type='submit'].twitter {
+        margin: 0 auto;
+        padding: 2.1rem 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media Screen and (min-width: 710px) {
+    button.github,
+    input[type='submit'].github,
+    button.facebook,
+    input[type='submit'].facebook,
+    button.twitter,
+    input[type='submit'].twitter {
+        margin: 0 auto;
+
+        padding: 2rem 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media Screen and (min-width: 1200px) {
+    button.github,
+    input[type='submit'].github,
+    button.facebook,
+    input[type='submit'].facebook,
+    button.twitter,
+    input[type='submit'].twitter {
+        margin: initial;
+        width: 100%;
+        padding: 2rem;
+    }
 }
 button.github,
 input[type='submit'].github {
@@ -767,4 +838,44 @@ input[type='submit'].twitter:after {
 .store-selector button[type='text'] {
     text-align: center;
     font-size: 3rem;
+}
+
+.order-wrap > .total {
+    text-align: center;
+}
+
+.order-wrap > h2 {
+    margin-bottom: 0;
+}
+@media Screen and (min-width: 1200px) {
+    .order-wrap > h2 {
+        margin-bottom: 2rem;
+    }
+}
+@media Screen and (min-width: 1200px) {
+    .order-wrap > .total {
+        text-align: initial;
+    }
+}
+
+.login > p {
+    font-size: 1.4rem;
+}
+
+@media Screen and (min-width: 420px) {
+    .login > p {
+        font-size: 1.6rem;
+    }
+}
+
+@media Screen and (min-width: 710px) {
+    .login > p {
+        font-size: 1.8rem;
+    }
+}
+
+@media Screen and (min-width: 1200px) {
+    .login > p {
+        font-size: 2rem;
+    }
 }
